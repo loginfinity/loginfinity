@@ -1,0 +1,90 @@
+/* Main layout styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Top control panel */
+.panel__top {
+  padding: 0;
+  width: 100%;
+  height: 40px;
+  background: #2d3e50;
+}
+
+/* Editor row layout */
+.editor-row {
+  display: flex;
+  height: calc(100vh - 40px);
+}
+
+/* Left blocks panel */
+.panel__left {
+  width: 200px;
+  background: #f5f5f5;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* Main editor container */
+.editor-cont {
+  flex-grow: 1;
+}
+
+/* Block styling */
+.gjs-block {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background: #f5f5f5;
+  border-radius: 3px;
+  cursor: move;
+}
+
+/* Canvas styling */
+.gjs-editor-cont {
+  background: #e0e0e0;
+}
+
+.gjs-cv-canvas {
+  background: white;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* 修复禁用状态图标 */
+.gjs-am-assets-header .fa-upload {
+  color: #4CAF50 !important; /* 绿色上传图标 */
+  position: relative;
+}
+
+/* 移除禁用标志 */
+.gjs-am-assets-header .fa-upload:after {
+  display: none !important;
+}
+
+/* Image uploader UI */
+.gjs-am-file-uploader {
+  border: 2px dashed #4CAF50;
+  background: #f8f8f8;
+}
+
+.gjs-am-asset-image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+/* 确保面板可见 */
+.panel__right {
+  width: 250px !important;
+  background: #ffcc00 !important; /* 黄色背景 */
+  display: block !important;
+}
+
+/* 素材管理器可见性 */
+.gjs-am-assets-cont {
+  display: flex !important;
+  flex-direction: column;
+  height: 100% !important;
+}
